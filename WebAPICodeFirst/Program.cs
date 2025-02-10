@@ -1,6 +1,7 @@
 using AutoMapper;
 using WebAPICodeFirst;
 using WebAPICodeFirst.DB;
+using WebAPICodeFirst.Services.InstrumentTypeServices;
 using WebAPICodeFirst.Services.PlayerServices;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,7 @@ IMapper mapper = mapperConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
 builder.Services.AddTransient<IPlayerService, PlayerService>();
+builder.Services.AddTransient<IInstumentTypeService, InstrumentTypeService>();
 
 var app = builder.Build();
 
