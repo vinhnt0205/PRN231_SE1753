@@ -17,21 +17,21 @@ namespace WebAPI_ContentNegotiation.Controllers
             blogpost.Add(new BlogPost
             {
                 BlogPostId = 1,
-                Title = "Lập trình C#",
+                Title = "Lập trình C# - HE172280",
                 MetaDescription = "C sharp là ngôn ngữ lập trình cấp cao...",
                 IsPublished = true
             });
             blogpost.Add(new BlogPost
             {
                 BlogPostId = 2,
-                Title = "Môn học PRN231",
+                Title = "Môn học PRN231 - HE172280",
                 MetaDescription = "Môn học chuyên về Web API",
                 IsPublished = true
             });
             blogpost.Add(new BlogPost
             {
                 BlogPostId = 3,
-                Title = "Ngôn ngứ PHP",
+                Title = "Ngôn ngứ PHP - HE172280",
                 MetaDescription = "Ngôn ngữ lập trình web server-side",
                 IsPublished = false
             });
@@ -39,7 +39,7 @@ namespace WebAPI_ContentNegotiation.Controllers
             blogs.Add(new Blog
             {
                 BlogId = 1,
-                BlogName = "Ngôn ngữ lập trình",
+                BlogName = "Ngôn ngữ lập trình - HE172280",
                 BlogDescription = "Blog chuyên về ngôn ngữ lập trình phổ dụng",
                 BlogPosts = blogpost
             });
