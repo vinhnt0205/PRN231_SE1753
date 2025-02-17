@@ -43,8 +43,22 @@ namespace WebAPI_ContentNegotiation.Controllers
                 BlogDescription = "Blog chuyên về ngôn ngữ lập trình phổ dụng",
                 BlogPosts = blogpost
             });
-
+            Func<BlogPost, bool> func = (BlogPost post) => post.IsPublished;
+            
             return Ok(blogs);
+        }
+
+        private IEnumerable<BlogPost> Where(IEnumerable<BlogPost> source ,Func<BlogPost, bool> func)
+        {
+            IEnumerable<BlogPost> result = new List<BlogPost>();
+            foreach(var item in source)
+            {
+                if(func(item))
+                {
+                    result.Append(item);
+                }
+            }
+            return result;
         }
     }
 }
