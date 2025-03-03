@@ -2,6 +2,6 @@
 {
 	public class CompanyForUpdateDto : CompanyForManipulationDto
 	{
-		public IEnumerable<EmployeeForCreationDto> Employees { get; set; }
+		public IEnumerable<EmployeeForCreationDto>? Employees { get; set; }
 	} 
 }
