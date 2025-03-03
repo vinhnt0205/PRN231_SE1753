@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.OData;
+using Microsoft.AspNetCore.OData.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
@@ -22,7 +23,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BookStoreContext>(options =>
 {
-	options.UseInMemoryDatabase("BookStoreDB");
+	options.UseInMemoryDatabase("BookLists");
 });
 
 var app = builder.Build();

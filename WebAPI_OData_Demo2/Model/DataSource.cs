@@ -13,21 +13,32 @@
 			books.Add(new Book
 			{
 				Id = 1,
-				ISBN = "978-1-321-87758-1",
-				Title = "Lap trinh c# 13",
-				Author = "FPTU",
-				Price = 139000m,
+
+				ISBN = "978-0-321-87758-1",
+
+				Title = "Essential C#5.0",
+
+				Author = "Mark Michaelis",
+
+				Price = 59.99m,
+
 				Location = new Address
 				{
-					City = "Hanoi City",
-					Street = "Hoa Lac"
+
+					City = "HCM City",
+
+					Street = "D2, Thu Duc District"
 				},
+
 				Press = new Press
+
 				{
+
 					Id = 1,
-					Name = "Tran van A",
-					Email = "Tranvana@fpt.edu.vn",
-					Category = Category.Book,
+
+					Name = "Addison-Wesley",
+
+					Category = Category.Book
 
 				}
 			});
