@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Update Reservation</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<h2>Update a Reservation <a href="AllReservation.html" class="btn btn-sm btn-secondary">Back</a></h2>
+		<div class="form-group">
+			<label asp-for-"Id"></label>
+			<input type="text" class="form-control" id="Id" readonly />
+		</div>
+		<div class="form-group">
+			<label for-"Name">Name: </label>
+			<input type="text" class="form control" id-"Name" />
+		</div>
+		<div class="form-group">
+			<label for="StartLocation">Start Location: </label>
+			<input type="text" class="form-control" id="StartLocation" />
+		</div>
+		<div class="form-group">
+			<label for-"EndLocation">End Location: </label>
+			<input type="text" class="form-control" id="EndLocation" />
+		</div>
+		<div class="text-center panel-body">
+			<button type="submit" class="btn btn-sm btn-primary" id="UpdateButton">Update</button>
+		</div>
+		<div style="display:none" id-"resultDiv">
+			<h2>Reservation</h2>
+			<table class="table table-sm table-striped table-bordered m-2">
+				<thead><tr><th>10</th><th>Name</th><th>Start Location</th><th>End Location</th></tr></thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+	<script src="/Clients/js/reservation_jquery.js">
+	</script>
+	<script>
+        $(document).ready(function() {
+            GetReservation()
+            UpdateReservation()
+        });
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container-fluid">
+    <h2>All Reservations</h2>
+    <a class="btn btn-sm btn-primary" asp-action="Add">Add Reservation</a>
+    <a class="btn btn-sm btn-primary" asp-action="GetById">Get Reservation</a>
+    <table class="table table-sm table-striped table-bordered m-2" id="apiTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Start Location</th>
+                <th>End Location</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script>
+    $(document).ready(function() {
+        console.log("work");
+        ShowAllReservation();
+        DeleteReservation();
+    });
+</script>
